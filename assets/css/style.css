@@ -1,0 +1,180 @@
+html{
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsla(0, 0%, 100%, 1);
+}
+button{
+    background: transparent;
+    border: 0;
+}
+
+p,
+div,
+h1,
+h2,
+h3,
+h4,ul,figure {
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    margin: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+header {
+    padding-block: 13px;
+    background-color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a.logo {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: hsla(214, 15%, 21%, 1);
+}
+
+.nav__button {
+    font-size: 3.5rem;
+    border: none;
+    background-color: transparent;
+}
+
+
+.menu{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 2rem;
+    bottom: 0;
+    width: 80%;
+    background-color: hsla(216, 14%, 14%, 1);
+    z-index: 1000;
+    transition: all ease-in-out 500ms;
+}
+.hide__menu{
+    left: -100%;
+}
+.logo__button{
+    position: absolute;
+    background: transparent;
+    font-size: 3rem;
+    color: white;
+    border: 0;
+    top: 20px;
+    left: 30px;
+}
+.close__button{
+    position: absolute;
+    background: transparent;
+    font-size: 3rem;
+    color: white;
+    border: 0;
+    top:20px;
+    right: 30px;
+}
+.nav__list{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 5.5rem;
+    margin-left:calc(30px - 1em);
+}
+.nav__link{
+    color: white;
+}
+.nav__item{
+    padding: 1em;
+    font-size: 1.5rem;
+}
+
+.show.overlay{
+    position: fixed;
+    top: 0;
+    left: 80%;
+    background: gray;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.hero__img{
+    border-radius: 50%;
+    margin-inline: 5%;
+
+}
+.hero__images{
+    position: relative;
+}
+.hero__banner{
+    background-color: hsla(220, 20%, 97%, 1);
+    padding-block:2rem;
+}
+.container{
+    position: relative;
+}
+
+.container .hero__shape{
+    position: absolute;
+    bottom: 4rem;
+    filter: drop-shadow(0 4px 28px hsla(216, 14%, 14%, 0.07));
+    right: 1rem;
+}
+
+.hero__message{
+    margin-block: 2rem;
+    padding-inline:3rem ;
+    display: grid;
+    gap:2rem;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.hero__message h1{
+    font-size: 3rem;
+    text-align: center;
+    grid-column: span 2;
+}
+
+.hero__message p{
+    font-size: 1.9em;
+    grid-column: span 2;
+}
+
+.btn{
+    color: hsla(344, 53%, 62%, 1);
+    font-size: 1.7rem;
+    font-weight: 700;
+    border: 2px solid hsla(344, 53%, 62%, 1);
+    max-width: max-content;
+    padding: 20px 24px;
+    border-radius:100px;
+    transition: 0.25s ease;
+    will-change: transform;
+}
+
+.btn-primary{
+    color: white;
+    background-color:hsla(344, 53%, 62%, 1) ;
+}
