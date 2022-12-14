@@ -1,11 +1,13 @@
 html{
     font-size: 10px;
+    font-family: 'Manrope', sans-serif;
 }
 
 body {
     margin: 0;
     padding: 0;
     background-color: hsla(0, 0%, 100%, 1);
+    color: hsla(220, 12%, 43%, 1);
 }
 button{
     background: transparent;
@@ -29,6 +31,7 @@ a{
 img {
     max-width: 100%;
     margin: 0;
+    height: auto;
 }
 
 *,
@@ -148,18 +151,19 @@ header a.logo {
     padding-inline:3rem ;
     display: grid;
     gap:2rem;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns:1fr;
+    justify-items: center;
 }
 
 .hero__message h1{
     font-size: 3rem;
     text-align: center;
-    grid-column: span 2;
+    /* grid-column: span 2; */
 }
 
 .hero__message p{
     font-size: 1.9em;
-    grid-column: span 2;
+    /* grid-column: span 2; */
 }
 
 .btn{
@@ -177,4 +181,147 @@ header a.logo {
 .btn-primary{
     color: white;
     background-color:hsla(344, 53%, 62%, 1) ;
+}
+
+/* Services */
+
+.hero__services .container{
+    display: grid;
+    grid-template-columns:1fr;
+    gap:1rem;
+    padding-inline: 1.5rem;
+}
+
+.services__message ,.services__works{
+    /* grid-column: span 2; */
+}
+.services__message h1{
+  font-size: 3.6rem; 
+  font-weight: bold;
+  color: hsla(219, 22%, 26%, 1);
+  margin-block:2rem;
+}
+
+.services__message p {
+    font-size: 2rem;
+    color: hsla(220, 12%, 43%, 1);
+    margin-bottom: 2rem;
+}
+.service{
+    /* grid-row: 2; */
+}
+.services__works div{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-block:1rem;
+    font-size: 1.6rem;
+}
+
+.services__works > div::before,.services__works > div::after{
+        position: absolute;
+        bottom: -0.5rem;
+        left: 0;
+        width: 100%;
+        height: 6px;
+        content: "";
+        border-radius: 2px;
+        background-color: hsl(216deg 14% 20% / 6%);
+}
+
+.services__works div:first-child::after{
+  background-color: #c7b1dd;
+}
+.services__works div:nth-child(2)::after{
+    background-color: #8caeec;
+    width: 80%;
+    border-radius: unset;
+}
+
+.services__works div:nth-child(3)::after {
+    background-color: #b0d4c1;
+    width: 85%;
+    border-radius: unset;
+}
+
+.services__works div:nth-child(4)::after {
+    background-color: #e3a6b6;
+    width: 90%;
+    border-radius: unset;
+}
+
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:3rem;
+}
+
+.service h1{
+    font-size: 1.9rem;
+    color:hsla(219, 22%, 26%, 1);
+    line-height: 1.3;
+    margin-block:1.6rem 1rem;
+}
+.service p{
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/* Projects */
+.hero__projects .container{
+    display: grid;
+    gap:2rem;
+}
+
+.projects__message{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+.project__description{
+    margin-block:2rem;
+}
+.project__description h1{
+    font-size: 3rem;
+    color: hsla(219, 22%, 26%, 1);
+    margin-block:1.6rem 1rem;
+
+}
+
+.project__description p{
+    font-size: 1.8rem;
+}
+
+.project{
+    background-color: #f8f5fb;
+    margin-inline: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.project__message{
+    /* margin-inline: 2rem; */
+}
+.project__catagory{
+    color:#a07cc5;
+    font-size: 1.4rem;
+}
+.project__title{
+        font-size: 2.6rem;
+        line-height: 1.7;
+}
+.project__message p{
+    font-size: 1.6rem;
+}
+
+.see__project{
+    border: unset;
+    color:#a07cc5;
+        display: inline-block;
+            padding-left: 0;
+}
+.project img{
+    width: 100%;
 }

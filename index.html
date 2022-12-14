@@ -1,74 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/style.css"  type="text/css" rel="stylesheet"/>
-    
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&amp;display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
+
 <body>
 
-<header>
-    <div class="container">
-        <a class="logo">
-          Kalayu
-        </a>
-        <nav class="nav menu hide__menu">
-            <button class="logo__button">
-                <span>Kalayu</span>
+    <header>
+        <div class="container">
+            <a class="logo">
+                Kalayu
+            </a>
+            <nav class="nav menu hide__menu">
+                <button class="logo__button">
+                    <span>Kalayu</span>
+                </button>
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="">Home</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">About</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Projects</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Blog</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Contact</a></li>
+                </ul>
+                <button class="close__button">
+                    <span>&#9747</span>
+                </button>
+                <div class="overlay"></div>
+            </nav>
+            <button class="nav__button">
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
             </button>
-            <ul class="nav__list">
-                <li class="nav__item" ><a class="nav__link" href="">Home</a></li>
-                <li class="nav__item"><a  class="nav__link"href="">About</a></li>
-                <li class="nav__item"><a  class="nav__link"href="">Projects</a></li>
-                <li class="nav__item"><a  class="nav__link"href="">Blog</a></li>
-                <li class="nav__item"><a  class="nav__link"href="">Contact</a></li>
-            </ul>
-            <button class="close__button">
-                <span>&#9747</span>
-            </button>
-                        <div class="overlay"></div>
-        </nav>
-        <button class="nav__button">
-         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-        </button>
+        </div>
+    </header>
+    <main>
+        <section class="hero__banner">
+            <div class="container">
+                <figure class="hero__images">
+                    <img src="assets/images/hero-banner.jpg" class="hero__img " width="90%" height="100%" />
+                    <img src="assets/images/hero-shape.svg" class="hero__shape" height="91" width="203" />
+                </figure>
+                <div class="hero__message">
+                    <h1>
+                        I'm User Interface Designer & Developer.
+                    </h1>
+                    <p>
+                        Hello! I'm Julia, a freelance user interface designer & developer based in London. I’m very
+                        passionate about the work
+                        that I do.
+                    </p>
+                    <a href="" class="btn btn-primary">See My Works</a>
+                    <a href="" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero__services">
+            <div class="container">
+                <div class="services__message">
+                    <h1> What I Do?</h1>
+                    <p>
+                        Duis mollis est commodo luctus nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                        Nullam quis risus eget urna
+                        mollis ornare vel. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel
+                        scelerisque nisl.
+                    </p>
+                </div>
+                <div class="services__works">
+                    <div class="services__mebdesign">
+                        <div>
+                            Web Design
+                        </div>
+                        <div>
+                            100%
+                        </div>
+                    </div>
+                    <div class="services__mebdesign">
+                        <div>
+                            Mobile Design
+                        </div>
+                        <div>
+                            80%
+                        </div>
+                    </div>
+                    <div class="services__development">
+                        <div>
+                            Development
+                        </div>
+                        <div>
+                            85%
+                        </div>
+                    </div>
+                    <div class="services__seo">
+                        <div>
+                            SEO
+                        </div>
+                        <div>
+                            90%
+                        </div>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="card-icon">
+                        <img src="/assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon">
+                    </div>
+                    <h1>Web Design</h1>
+                    <p>
+                        Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.
+                        Cras justo cum sociis
+                        natoque magnis.
+                    </p>
+                </div>
+                <div class="service">
+                    <div class="card-icon">
+                        <img src="/assets/images/icon-2.svg" width="52" height="52" loading="lazy" alt="web design icon">
+                    </div>
+                    <h1>Mobile Design</h1>
+                    <p>
+                        Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.
+                        Cras justo cum
+                        sociis
+                        natoque magnis.
+                    </p>
+                </div>
+                <div class="service">
+                                        <div class="card-icon">
+                                            <img src="/assets/images/icon-3.svg" width="52" height="52" loading="lazy" alt="web design icon">
+                                        </div>
+                                        <h1>Development</h1>
+                    <p>
+                        Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.
+                        Cras justo cum
+                        sociis
+                        natoque magnis.
+                    </p>
+                </div>
+
+                <div class="service">
+                                        <div class="card-icon">
+                                            <img src="/assets/images/icon-4.svg" width="52" height="52" loading="lazy" alt="web design icon">
+                                        </div>
+                                        <h1>SEO</h1>
+                    <p>
+                        Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.
+                        Cras justo cum
+                        sociis
+                        natoque magnis.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="hero__projects">
+            <div class="container">
+                  <div class="projects__message">
+                    <div class="project__description">
+                        <h1>Latest Projects</h1>
+                        <p>Check out some of my latest projects with creative ideas.</p>
+                    </div>
+                    <a href="" class="btn">
+                       See All Projects
+                    </a>
+                  </div>
+
+                  <div class="project">
+                    <div class="project__message">
+                        <span class="project__catagory">Web Desgin</span>
+                        <h1 class="project__title">Snowlake Theme</h1>
+                        <p>
+                            Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id ligula porta felis euismod
+                            semper. Fusce dapibus tellus cursus.
+                        </p>
+                        <a href="" class="btn see__project">
+                            See Project
+                            <ion-icon name="arrow-forward-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+                        </a>
+                    </div>
+                    <figure class="" >
+                        <img src="/assets/images/project-1.png" width="650" height="370" loading="lazy" alt="Web Design" class="">
+                    </figure>
+                  </div>
+
+                        <div class="project">
+                            <div class="project__message">
+                                <span class="project__catagory">Mobile Desgin</span>
+                                <h1 class="project__title">Budget App</h1>
+                                <p>
+                                    Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id ligula porta felis
+                                    euismod
+                                    semper. Fusce dapibus tellus cursus.
+                                </p>
+                                <a href="" class="btn see__project">
+                                    See Project
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+                                </a>
+                            </div>
+                            <figure class="">
+                                <img src="/assets/images/project-2.png" width="650" height="370" loading="lazy" alt="Web Design" class="">
+                            </figure>
+                        </div>
+
+                                <div class="project">
+                                    <div class="project__message">
+                                        <span class="project__catagory">WEB DESIGN</span>
+                                        <h1 class="project__title">Missio Theme</h1>
+                                        <p>
+                                            Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id ligula porta felis
+                                            euismod
+                                            semper. Fusce dapibus tellus cursus.
+                                        </p>
+                                        <a href="" class="btn see__project">
+                                            See Project
+                                            <ion-icon name="arrow-forward-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+                                        </a>
+                                    </div>
+                                    <figure class="">
+                                        <img src="/assets/images/project-3.png" width="650" height="370" loading="lazy" alt="Web Design" class="">
+                                    </figure>
+                                </div>
+
+
+                                <div class="project">
+                                    <div class="project__message">
+                                        <span class="project__catagory">MOBILE DESIGN</span>
+                                        <h1 class="project__title">Storage App</h1>
+                                        <p>
+                                            Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id ligula porta felis
+                                            euismod
+                                            semper. Fusce dapibus tellus cursus.
+                                        </p>
+                                        <a href="" class="btn see__project">
+                                            See Project
+                                            <ion-icon name="arrow-forward-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+                                        </a>
+                                    </div>
+                                    <figure class="">
+                                        <img src="/assets/images/project-4.png" width="650" height="370" loading="lazy" alt="Web Design" class="">
+                                    </figure>
+                                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
     </div>
-</header>
-<main>
-<section class="hero__banner">
-  <div class="container">
-   <figure class="hero__images">
-    <img src="assets/images/hero-banner.jpg" class="hero__img "width="90%" height="100%"/>
-    <img src="assets/images/hero-shape.svg" class="hero__shape" height="91" width="203"/>
-   </figure>
-   <div class="hero__message">
-    <h1>
-        I'm User Interface Designer & Developer.
-    </h1>
-    <p>
-        Hello! I'm Julia, a freelance user interface designer & developer based in London. I’m very passionate about the work
-        that I do.
-    </p>
-     <a href="" class="btn btn-primary">See My Works</a>
-     <a href="" class="btn btn-secondary" >Contact Me</a>
-   </div>
-  </div>
-</section>
-</main>
+    <script src="assets/js/script.js"></script>
 
-<footer>
-
-</footer>
-
-</div>
-    <script src="assets/js/script.js" ></script>
-
-<!-- 
+    <!-- 
     - ionicon link
   -->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
