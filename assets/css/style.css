@@ -1,4 +1,4 @@
-html{
+html {
     font-size: 10px;
     font-family: 'Manrope', sans-serif;
 }
@@ -9,7 +9,8 @@ body {
     background-color: hsla(0, 0%, 100%, 1);
     color: hsla(220, 12%, 43%, 1);
 }
-button{
+
+button {
     background: transparent;
     border: 0;
 }
@@ -19,12 +20,14 @@ div,
 h1,
 h2,
 h3,
-h4,ul,figure {
+h4,
+ul,
+figure {
     padding: 0;
     margin: 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -64,9 +67,9 @@ header a.logo {
 }
 
 
-.menu{
+.menu {
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     right: 2rem;
     bottom: 0;
@@ -75,10 +78,12 @@ header a.logo {
     z-index: 1000;
     transition: all ease-in-out 500ms;
 }
-.hide__menu{
+
+.hide__menu {
     left: -100%;
 }
-.logo__button{
+
+.logo__button {
     position: absolute;
     background: transparent;
     font-size: 3rem;
@@ -87,32 +92,36 @@ header a.logo {
     top: 20px;
     left: 30px;
 }
-.close__button{
+
+.close__button {
     position: absolute;
     background: transparent;
     font-size: 3rem;
     color: white;
     border: 0;
-    top:20px;
+    top: 20px;
     right: 30px;
 }
-.nav__list{
+
+.nav__list {
     display: flex;
     list-style: none;
     flex-direction: column;
     justify-content: space-around;
     margin-top: 5.5rem;
-    margin-left:calc(30px - 1em);
+    margin-left: calc(30px - 1em);
 }
-.nav__link{
+
+.nav__link {
     color: white;
 }
-.nav__item{
+
+.nav__item {
     padding: 1em;
     font-size: 1.5rem;
 }
 
-.show.overlay{
+.show.overlay {
     position: fixed;
     top: 0;
     left: 80%;
@@ -123,83 +132,88 @@ header a.logo {
     opacity: 0.8;
 }
 
-.hero__img{
+.hero__img {
     border-radius: 50%;
     margin-inline: 5%;
 
 }
-.hero__images{
-    position: relative;
-}
-.hero__banner{
-    background-color: hsla(220, 20%, 97%, 1);
-    padding-block:2rem;
-}
-.container{
+
+.hero__images {
     position: relative;
 }
 
-.container .hero__shape{
+.hero__banner {
+    background-color: hsla(220, 20%, 97%, 1);
+    padding-block: 2rem;
+}
+
+.container {
+    position: relative;
+}
+
+.container .hero__shape {
     position: absolute;
     bottom: 4rem;
     filter: drop-shadow(0 4px 28px hsla(216, 14%, 14%, 0.07));
     right: 1rem;
 }
 
-.hero__message{
+.hero__message {
     margin-block: 2rem;
-    padding-inline:3rem ;
+    padding-inline: 3rem;
     display: grid;
-    gap:2rem;
-    grid-template-columns:1fr;
+    gap: 2rem;
+    grid-template-columns: 1fr;
     justify-items: center;
 }
 
-.hero__message h1{
+.hero__message h1 {
     font-size: 3rem;
     text-align: center;
     /* grid-column: span 2; */
 }
 
-.hero__message p{
+.hero__message p {
     font-size: 1.9em;
     /* grid-column: span 2; */
 }
 
-.btn{
+.btn {
     color: hsla(344, 53%, 62%, 1);
     font-size: 1.7rem;
     font-weight: 700;
     border: 2px solid hsla(344, 53%, 62%, 1);
     max-width: max-content;
     padding: 20px 24px;
-    border-radius:100px;
+    border-radius: 100px;
     transition: 0.25s ease;
     will-change: transform;
 }
 
-.btn-primary{
+.btn-primary {
     color: white;
-    background-color:hsla(344, 53%, 62%, 1) ;
+    background-color: hsla(344, 53%, 62%, 1);
 }
 
 /* Services */
 
-.hero__services .container{
+.hero__services .container {
     display: grid;
-    grid-template-columns:1fr;
-    gap:1rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     padding-inline: 1.5rem;
 }
 
-.services__message ,.services__works{
+.services__message,
+.services__works {
     /* grid-column: span 2; */
 }
-.services__message h1{
-  font-size: 3.6rem; 
-  font-weight: bold;
-  color: hsla(219, 22%, 26%, 1);
-  margin-block:2rem;
+
+.services__message h1 {
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: hsla(219, 22%, 26%, 1);
+    margin-block: 2rem;
 }
 
 .services__message p {
@@ -207,32 +221,36 @@ header a.logo {
     color: hsla(220, 12%, 43%, 1);
     margin-bottom: 2rem;
 }
-.service{
+
+.service {
     /* grid-row: 2; */
 }
-.services__works div{
+
+.services__works div {
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-block:1rem;
+    margin-block: 1rem;
     font-size: 1.6rem;
 }
 
-.services__works > div::before,.services__works > div::after{
-        position: absolute;
-        bottom: -0.5rem;
-        left: 0;
-        width: 100%;
-        height: 6px;
-        content: "";
-        border-radius: 2px;
-        background-color: hsl(216deg 14% 20% / 6%);
+.services__works>div::before,
+.services__works>div::after {
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    content: "";
+    border-radius: 2px;
+    background-color: hsl(216deg 14% 20% / 6%);
 }
 
-.services__works div:first-child::after{
-  background-color: #c7b1dd;
+.services__works div:first-child::after {
+    background-color: #c7b1dd;
 }
-.services__works div:nth-child(2)::after{
+
+.services__works div:nth-child(2)::after {
     background-color: #8caeec;
     width: 80%;
     border-radius: unset;
@@ -250,78 +268,159 @@ header a.logo {
     border-radius: unset;
 }
 
-.service{
+.service {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top:3rem;
+    margin-top: 3rem;
 }
 
-.service h1{
+.service h1 {
     font-size: 1.9rem;
-    color:hsla(219, 22%, 26%, 1);
+    color: hsla(219, 22%, 26%, 1);
     line-height: 1.3;
-    margin-block:1.6rem 1rem;
+    margin-block: 1.6rem 1rem;
 }
-.service p{
+
+.service p {
     font-size: 1.6rem;
     text-align: center;
 }
 
 /* Projects */
-.hero__projects .container{
+.hero__projects .container {
     display: grid;
-    gap:2rem;
+    gap: 2rem;
 }
 
-.projects__message{
+.projects__message {
     display: flex;
     flex-direction: column;
     margin: 2rem;
 }
-.project__description{
-    margin-block:2rem;
+
+.project__description {
+    margin-block: 2rem;
 }
-.project__description h1{
+
+.project__description h1 {
     font-size: 3rem;
     color: hsla(219, 22%, 26%, 1);
-    margin-block:1.6rem 1rem;
+    margin-block: 1.6rem 1rem;
 
 }
 
-.project__description p{
+.project__description p {
     font-size: 1.8rem;
 }
 
-.project{
+.project {
     background-color: #f8f5fb;
     margin-inline: 2rem;
     padding: 2rem;
     border-radius: 1rem;
 }
 
-.project__message{
+.project__message {
     /* margin-inline: 2rem; */
 }
-.project__catagory{
-    color:#a07cc5;
+
+.project__catagory {
+    color: #a07cc5;
     font-size: 1.4rem;
 }
-.project__title{
-        font-size: 2.6rem;
-        line-height: 1.7;
+
+.project__title {
+    font-size: 2.6rem;
+    line-height: 1.7;
 }
-.project__message p{
+
+.project__message p {
     font-size: 1.6rem;
 }
 
-.see__project{
+.see__project {
     border: unset;
-    color:#a07cc5;
-        display: inline-block;
-            padding-left: 0;
+    color: #a07cc5;
+    display: inline-block;
+    padding-left: 0;
 }
-.project img{
+
+.project img {
     width: 100%;
+}
+
+/* contact us */
+
+.contact__us {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: hsla(345, 57%, 97%, 1);
+    border-radius: 1rem;
+    padding: 2rem;
+
+}
+
+.contact__details {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__details h2 {
+    font-size: 3rem;
+    color: hsla(219, 22%, 26%, 1);
+}
+
+.contact__details p {
+    font-size: 1.6rem;
+    padding-block: 1rem;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 1rem;
+}
+
+.contact__form input {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.contact__form textarea {
+    border: none;
+    border-radius: 0.5rem;
+    padding-top: 2.23rem;
+    padding-left: 2rem;
+    max-width: 100%;
+    width: 100%;
+    resize: vertical;
+
+}
+
+footer .container{
+    position: unset;
+    margin-left: 2rem;
+}
+
+ul.social__list{
+    list-style: none;
+    display: flex;
+}
+
+.copyright{
+    font-size: 1.6rem;
+}
+
+ul.social__list li{
+    padding:1rem;
+    font-size: 2rem;
+}
+
+a.social-link{
+  color:hsla(219, 22%, 26%, 1);
 }
