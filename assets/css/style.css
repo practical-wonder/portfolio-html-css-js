@@ -417,7 +417,7 @@ ul.social__list{
 }
 
 ul.social__list li{
-    padding:1rem;
+    padding:1rem 1rem 1rem 0;
     font-size: 2rem;
 }
 
